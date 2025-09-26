@@ -11,18 +11,18 @@ importers:
 
   .:
     dependencies:
-      '@fewangsit/wangsvue':
-        specifier: 1.5.219-alpha.4
-        version: 1.5.219-alpha.4(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))
+      '@fewangsit/wangsvue-fats':
+        specifier: 1.0.1-alpha.62
+        version: 1.0.1-alpha.62(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))
       '@fewangsit/wangsvue-presets':
         specifier: 1.0.99-alpha.1
         version: 1.0.99-alpha.1
-      '@fewangsit/workspace-api-services':
-        specifier: 1.0.18-alpha.1
-        version: 1.0.18-alpha.1
       '@microtsm/vue':
         specifier: ^0.0.22
         version: 0.0.22(typescript@5.8.3)
+      '@tagsamurai/fats-api-services':
+        specifier: 1.0.3-alpha.39
+        version: 1.0.3-alpha.39
       axios:
         specifier: 1.8.4
         version: 1.8.4(debug@4.3.6)
@@ -661,6 +661,11 @@ packages:
   '@cypress/xvfb@1.2.4':
     resolution: {integrity: sha512-skbBzPggOVYCbnGgV+0dmBdW/s77ZkAOXIC1knS8NagwDjBrNC1LuXtQJeiN6l+m7lzmHtaoUw/ctJKdqkG57Q==}
 
+  '@e965/xlsx@0.20.3':
+    resolution: {integrity: sha512-703RN/3OdsRD5mtse2HBX7Um7xwaP9tlswEG6svOtjqokXoX7rJdQj7DyabD2I+xk22RgaIIU+R6BHgkpZGB/w==}
+    engines: {node: '>=0.8'}
+    hasBin: true
+
   '@esbuild/aix-ppc64@0.25.0':
     resolution: {integrity: sha512-O7vun9Sf8DFjH2UtqK8Ku3LkquL9SZL8OLY1T5NZkA34+wG3OQF7cl4Ql8vdNzM6fzBbYfLaiRLIOZ+2FOCgBQ==}
     engines: {node: '>=18'}
@@ -844,14 +849,11 @@ packages:
       eslint-plugin-vue: '>=9.32.0'
       typescript: '>=5.5.4'
 
+  '@fewangsit/wangsvue-fats@1.0.1-alpha.62':
+    resolution: {integrity: sha512-PR6NPAiw8KsgeTPxmHZZA/NwY8/5aDvCC7NXH4nfU9lde8MKH1YCdaB+H+MoLnvO+oGK0G3kNa3nK/+4/pfKKg==}
+
   '@fewangsit/wangsvue-presets@1.0.99-alpha.1':
     resolution: {integrity: sha512-MgAUaVmc4hap217qbfQsYB7SrUXjuiu45mmuRUuNkuQXEjRoh/YA5LA3k90TNexQGKv4qnXGrKiaroZpLC3amg==}
-
-  '@fewangsit/wangsvue@1.5.219-alpha.4':
-    resolution: {integrity: sha512-xqAdKZTMjykI0BjGZwoIN3nLmO7nb5k+9wx+l2DwMitC/hpPJHMREyd+xN+npjVzHCwh+ED4+Bpilz4aswZ9Ww==}
-
-  '@fewangsit/workspace-api-services@1.0.18-alpha.1':
-    resolution: {integrity: sha512-Tz4Vatyij8Ea7cv6iUpSuQiCbykis55M73urVQLYXrNkJMn+r/0i7c5i2Vtutw3GwVR4dGLhbRcpqGKBUyntNw==}
 
   '@hapi/hoek@9.3.0':
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
@@ -1102,6 +1104,9 @@ packages:
     peerDependencies:
       '@stencil/core': '>=2.0.0 || >=3.0.0 || >= 4.0.0-beta.0 || >= 4.0.0'
 
+  '@tagsamurai/fats-api-services@1.0.3-alpha.39':
+    resolution: {integrity: sha512-ypZ97PwBzkXvrgasbQqC7gJzQTw/vHTrEs+Drpd6CfmVwhE1un1z515ZWh9Ujb6+nRGg2qtTZ2Qx1dy+q+i2Tg==}
+
   '@tsconfig/node10@1.0.11':
     resolution: {integrity: sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw==}
 
@@ -1143,6 +1148,9 @@ packages:
 
   '@types/sizzle@2.3.9':
     resolution: {integrity: sha512-xzLEyKB50yqCUPUJkIsrVvoWNfFUbIZI+RspLWt8u+tIW/BetMBZtgV2LY/2o+tYH8dRvQ+eoPf3NdhQCcLE2w==}
+
+  '@types/web-bluetooth@0.0.21':
+    resolution: {integrity: sha512-oIQLCGWtcFZy2JW77j9k8nHzAOpqMHLQejDA48XXMWH6tjCQHz5RCFz1bzsmROyL6PUm+LLnUiI4BCn221inxA==}
 
   '@types/yauzl@2.10.3':
     resolution: {integrity: sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q==}
@@ -1314,6 +1322,19 @@ packages:
 
   '@vue/shared@3.5.16':
     resolution: {integrity: sha512-c/0fWy3Jw6Z8L9FmTyYfkpM5zklnqqa9+a6dz3DvONRKW2NEbh46BP0FHuLFSWi2TnQEtp91Z6zOWNrU6QiyPg==}
+
+  '@vueuse/core@13.9.0':
+    resolution: {integrity: sha512-ts3regBQyURfCE2BcytLqzm8+MmLlo5Ln/KLoxDVcsZ2gzIwVNnQpQOL/UKV8alUqjSZOlpFZcRNsLRqj+OzyA==}
+    peerDependencies:
+      vue: ^3.5.0
+
+  '@vueuse/metadata@13.9.0':
+    resolution: {integrity: sha512-1AFRvuiGphfF7yWixZa0KwjYH8ulyjDCC0aFgrGRz8+P4kvDFSdXLVfTk5xAN9wEuD1J6z4/myMoYbnHoX07zg==}
+
+  '@vueuse/shared@13.9.0':
+    resolution: {integrity: sha512-e89uuTLMh0U5cZ9iDpEI2senqPGfbPRTHM/0AaQkcxnpqjkZqDYP8rpfm7edOz8s+pOCOROEy1PIveSW8+fL5g==}
+    peerDependencies:
+      vue: ^3.5.0
 
   '@wangs-ui/core@1.0.23':
     resolution: {integrity: sha512-oZMjX1tElnYlS4LQuKTTUjdP/ppsTIjsrW53uL81d6fP8TDcSLcctUacOfdfezcoxDiSPoyAexeKBVL+cDIL4A==}
@@ -4555,6 +4576,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@e965/xlsx@0.20.3': {}
+
   '@esbuild/aix-ppc64@0.25.0':
     optional: true
 
@@ -4667,18 +4690,18 @@ snapshots:
       eslint-plugin-vue: 9.32.0(eslint@8.57.1)
       typescript: 5.8.3
 
-  '@fewangsit/wangsvue-presets@1.0.99-alpha.1': {}
-
-  '@fewangsit/wangsvue@1.5.219-alpha.4(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))':
+  '@fewangsit/wangsvue-fats@1.0.1-alpha.62(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))':
     dependencies:
+      '@vueuse/core': 13.9.0(vue@3.5.16(typescript@5.8.3))
       '@wangs-ui/core': 1.0.23(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))
       '@wangs-ui/vue': 1.0.23(@stencil/core@4.34.0)(@wangs-ui/core@1.0.23(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3)))(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))
+      xlsx: '@e965/xlsx@0.20.3'
     transitivePeerDependencies:
       - '@stencil/core'
       - vue
       - vue-router
 
-  '@fewangsit/workspace-api-services@1.0.18-alpha.1': {}
+  '@fewangsit/wangsvue-presets@1.0.99-alpha.1': {}
 
   '@hapi/hoek@9.3.0': {}
 
@@ -4915,6 +4938,8 @@ snapshots:
     dependencies:
       '@stencil/core': 4.34.0
 
+  '@tagsamurai/fats-api-services@1.0.3-alpha.39': {}
+
   '@tsconfig/node10@1.0.11':
     optional: true
 
@@ -4954,6 +4979,8 @@ snapshots:
   '@types/sinonjs__fake-timers@8.1.1': {}
 
   '@types/sizzle@2.3.9': {}
+
+  '@types/web-bluetooth@0.0.21': {}
 
   '@types/yauzl@2.10.3':
     dependencies:
@@ -5201,6 +5228,19 @@ snapshots:
       vue: 3.5.16(typescript@5.8.3)
 
   '@vue/shared@3.5.16': {}
+
+  '@vueuse/core@13.9.0(vue@3.5.16(typescript@5.8.3))':
+    dependencies:
+      '@types/web-bluetooth': 0.0.21
+      '@vueuse/metadata': 13.9.0
+      '@vueuse/shared': 13.9.0(vue@3.5.16(typescript@5.8.3))
+      vue: 3.5.16(typescript@5.8.3)
+
+  '@vueuse/metadata@13.9.0': {}
+
+  '@vueuse/shared@13.9.0(vue@3.5.16(typescript@5.8.3))':
+    dependencies:
+      vue: 3.5.16(typescript@5.8.3)
 
   '@wangs-ui/core@1.0.23(@stencil/core@4.34.0)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))':
     dependencies:

@@ -1,5 +1,5 @@
-import { Option } from '@fewangsit/wangsvue/dropdown';
-import { FilterField } from '@fewangsit/wangsvue/filtercontainer';
+import { Option } from '@fewangsit/wangsvue-fats/dropdown';
+import { FilterField } from '@fewangsit/wangsvue-fats/filtercontainer';
 
 export const quickFilterFields: FilterField[] = [
   {

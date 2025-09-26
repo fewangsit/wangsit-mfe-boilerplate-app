@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Toast } from '@fewangsit/wangsvue';
+import { Toast } from '@fewangsit/wangsvue-fats';
 </script>
 
 <template>

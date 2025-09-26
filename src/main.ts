@@ -2,12 +2,17 @@ import App from '@/App.vue';
 import createVueMicroApp from '@microtsm/vue';
 import router from './router';
 
-import { WangsVue, ToastService, Tooltip, Focus } from '@fewangsit/wangsvue';
-import preset from '@fewangsit/wangsvue-presets/wangsvue';
+import {
+  WangsVue,
+  ToastService,
+  Tooltip,
+  Focus,
+} from '@fewangsit/wangsvue-fats';
+import preset from '@fewangsit/wangsvue-presets/fixedasset';
 
 import '@/assets/css/main.css';
-import '@fewangsit/wangsvue/style.css';
-import '@fewangsit/wangsvue-presets/wangsvue/style.css';
+import '@fewangsit/wangsvue-fats/style.css';
+import '@fewangsit/wangsvue-presets/fixedasset/style.css';
 
 export const { mount, unmount } = createVueMicroApp(App, {
   el: '#app', // Only used for standalone development

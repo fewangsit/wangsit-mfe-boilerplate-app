@@ -1,19 +1,18 @@
 <script setup lang="ts">
 import { computed, shallowRef } from 'vue';
-import { Badge, BadgeGroup, DataTable } from '@fewangsit/wangsvue';
+import { Badge, BadgeGroup, DataTable } from '@fewangsit/wangsvue-fats';
 import {
   FetchResponse,
   TableCellComponent,
   QueryParams,
   TableColumn,
-} from '@fewangsit/wangsvue/datatable';
-import { MenuItem } from '@fewangsit/wangsvue/menuitem';
+} from '@fewangsit/wangsvue-fats/datatable';
+import { MenuItem } from '@fewangsit/wangsvue-fats/menuitem';
 import { Member } from '@/types/member.type';
 import router from '@/router';
 import DialogDeleteUser from './DialogDeleteUser/DialogDeleteUser.vue';
 import ExampleModuleTableFilter from './ExampleModuleTableFilter.vue';
 import ExampleModuleHeader from './ExampleModuleHeader.vue';
-import ExampleModuleQuickFilter from './ExampleModuleQuickFilter.vue';
 import UserServices from '@/components/services/example.service';
 
 const selectedUser = shallowRef<Member>();
@@ -90,7 +89,6 @@ const getTableData = async (
 <template>
   <ExampleModuleHeader />
   <ExampleModuleTableFilter />
-  <ExampleModuleQuickFilter />
   <DataTable
     :columns="tableColumns"
     :fetch-function="getTableData"

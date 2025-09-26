@@ -19,16 +19,16 @@
       "cypress",
       "mocha",
       "@microtsm/cli/client",
-      "@fewangsit/workspace-api-services",
-      "@fewangsit/wangsvue"
+      "@tagsamurai/fats-api-services",
+      "@fewangsit/wangsvue-fats"
     ],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "@fewangsit/workspace-api-services/*": [
-        "node_modules/@fewangsit/workspace-api-services/*"
+      "@tagsamurai/fats-api-services/*": [
+        "node_modules/@tagsamurai/fats-api-services/*"
       ],
-      "@fewangsit/wangsvue/*": ["node_modules/@fewangsit/wangsvue/*"]
+      "@fewangsit/wangsvue-fats/*": ["node_modules/@fewangsit/wangsvue-fats/*"]
     }
   },
   "include": [

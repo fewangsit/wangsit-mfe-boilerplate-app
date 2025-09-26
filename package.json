@@ -14,10 +14,10 @@
     "cy:test-all": "microtsm e2e --headless"
   },
   "dependencies": {
-    "@fewangsit/wangsvue": "1.5.219-alpha.4",
+    "@fewangsit/wangsvue-fats": "1.0.1-alpha.62",
     "@fewangsit/wangsvue-presets": "1.0.99-alpha.1",
-    "@fewangsit/workspace-api-services": "1.0.18-alpha.1",
     "@microtsm/vue": "^0.0.22",
+    "@tagsamurai/fats-api-services": "1.0.3-alpha.39",
     "axios": "1.8.4",
     "cypress-intercept-formdata": "^0.6.0",
     "microtsm": "^0.0.37",

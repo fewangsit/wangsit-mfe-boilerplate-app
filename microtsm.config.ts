@@ -25,9 +25,9 @@ export default defineConfig((env) => ({
         'vue',
         'vue-router',
         'axios',
-        '@fewangsit/wangsvue',
-        '@fewangsit/wangsvue-presets/wangsvue',
-        '@fewangsit/workspace-api-services',
+        '@fewangsit/wangsvue-fats',
+        '@fewangsit/wangsvue-presets/fixedasset',
+        '@tagsamurai/fats-api-services',
       ],
     },
     lib: {
@@ -44,13 +44,13 @@ export default defineConfig((env) => ({
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src'),
-      '@fewangsit/wangsvue': resolve(
+      '@fewangsit/wangsvue-fats': resolve(
         __dirname,
-        'node_modules/@fewangsit/wangsvue',
+        'node_modules/@fewangsit/wangsvue-fats',
       ),
-      '@fewangsit/workspace-api-services': resolve(
+      '@tagsamurai/fats-api-services': resolve(
         __dirname,
-        'node_modules/@fewangsit/workspace-api-services',
+        'node_modules/@tagsamurai/fats-api-services',
       ),
     },
   },

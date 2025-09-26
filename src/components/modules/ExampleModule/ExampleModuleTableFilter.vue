@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { FilterContainer } from '@fewangsit/wangsvue';
+import { FilterContainer } from '@fewangsit/wangsvue-fats';
 import { filterFields } from './options/filterFields';
 </script>
 

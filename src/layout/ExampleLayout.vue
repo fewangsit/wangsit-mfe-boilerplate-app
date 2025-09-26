@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useBreadcrumbStore } from '@/store';
-import { Breadcrumb, Card, TabMenu } from '@fewangsit/wangsvue';
-import { MenuItem } from '@fewangsit/wangsvue/menuitem';
+import { Breadcrumb, Card, TabMenu } from '@fewangsit/wangsvue-fats';
+import { MenuItem } from '@fewangsit/wangsvue-fats/menuitem';
 
 const { breadcrumbs } = useBreadcrumbStore();
 
