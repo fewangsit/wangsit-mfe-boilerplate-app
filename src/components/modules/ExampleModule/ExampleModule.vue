@@ -10,8 +10,7 @@ import {
 import { MenuItem } from '@fewangsit/wangsvue-fats/menuitem';
 import { Member } from '@/types/member.type';
 import router from '@/router';
-import DialogDeleteUser from './DialogDeleteUser/DialogDeleteUser.vue';
-import ExampleModuleTableFilter from './ExampleModuleTableFilter.vue';
+import DialogDeleteUser from './DialogDeleteUser.vue';
 import ExampleModuleHeader from './ExampleModuleHeader.vue';
 import UserServices from '@/components/services/example.service';
 
@@ -88,7 +87,6 @@ const getTableData = async (
 
 <template>
   <ExampleModuleHeader />
-  <ExampleModuleTableFilter />
   <DataTable
     :columns="tableColumns"
     :fetch-function="getTableData"

@@ -6,9 +6,12 @@ import {
   ButtonDownload,
   ButtonFilter,
   ButtonSearch,
+  FilterContainer,
 } from '@fewangsit/wangsvue-fats';
+import { Option } from '@fewangsit/wangsvue-fats/dropdown';
+import { FilterField } from '@fewangsit/wangsvue-fats/filtercontainer';
 import { Member } from '@/types/member.type';
-import DialogDeleteUser from './DialogDeleteUser/DialogDeleteUser.vue';
+import DialogDeleteUser from './DialogDeleteUser.vue';
 
 const dataSelected = shallowRef<Member[]>([]);
 const showDeleteUserDialog = shallowRef<boolean>(false);
@@ -21,6 +24,22 @@ const bulkAction: MenuItem[] = [
     command: (): void => {
       showDeleteUserDialog.value = true;
     },
+  },
+];
+
+const filterFields: FilterField[] = [
+  {
+    label: 'Country',
+    field: 'country',
+    type: 'multiselect',
+    placeholder: 'Select country',
+    fetchOptionFn: (): Option[] => [{ label: 'Indonesia' }],
+  },
+  {
+    label: 'Age',
+    fields: ['minAge', 'maxAge'],
+    type: 'rangenumber',
+    placeholder: '0',
   },
 ];
 </script>
@@ -36,6 +55,8 @@ const bulkAction: MenuItem[] = [
     <ButtonDownload file-name="Download" table-name="user-list" />
     <ButtonFilter table-name="user-list" />
   </div>
+
+  <FilterContainer :fields="filterFields" table-name="user-list" />
 
   <DialogDeleteUser
     v-model:visible="showDeleteUserDialog"
