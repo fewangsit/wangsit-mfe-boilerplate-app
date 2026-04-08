@@ -14,6 +14,11 @@ export const { mount, unmount } = createVueMicroApp(App, {
   setupInstance(app) {
     app.use(WangsVue, {
       preset,
+      defaultProps: {
+        FieldWrapper: {
+          showOptionalText: true,
+        },
+      },
       locale: {
         global: {
           monthNames: [
@@ -59,6 +64,7 @@ export const { mount, unmount } = createVueMicroApp(App, {
         components: {
           FieldWrapper: {
             labelRequired: '*',
+            labelOptional: '(optional)',
           },
           InputText: {
             urlFormatInvalidText: 'URL format is incorrect',
