@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@fewangsit/eslint-config-vue-code-standard": "^1.0.13",
-    "@fewangsit/wangsvue": "1.5.229-alpha.50",
+    "@fewangsit/wangsvue": "1.5.229-alpha.52",
     "@fewangsit/wangsvue-presets": "2.0.0-alpha.2",
     "@fewangsit/workspace-api-services": "1.0.18-alpha.1",
     "@microtsm/vue": "^0.0.22",

@@ -22,8 +22,8 @@ importers:
         specifier: ^1.0.13
         version: 1.0.13(@types/eslint@9.6.1)(jiti@1.21.7)(prettier@3.3.3)(typescript@5.8.3)(vue-eslint-parser@10.2.0(eslint@9.39.2(jiti@1.21.7)))
       '@fewangsit/wangsvue':
-        specifier: 1.5.229-alpha.50
-        version: 1.5.229-alpha.50(@stencil/core@4.39.0)(hono@4.11.7)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))
+        specifier: 1.5.229-alpha.52
+        version: 1.5.229-alpha.52(@stencil/core@4.39.0)(hono@4.11.7)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))
       '@fewangsit/wangsvue-presets':
         specifier: 2.0.0-alpha.2
         version: 2.0.0-alpha.2
@@ -925,8 +925,8 @@ packages:
   '@fewangsit/wangsvue-presets@2.0.0-alpha.2':
     resolution: {integrity: sha512-urQX+ilkH74mFLYZu1ahYhbPNwMBGTXxfe2ckvealClFi0cKoMPNdXOTBCnTJIn5kk4QvETxMZsz4aEr1qG0Pg==}
 
-  '@fewangsit/wangsvue@1.5.229-alpha.50':
-    resolution: {integrity: sha512-SLt1X1ZGENs5nFttVCmorKdjxXkbYXb8e6yukrEdK0nTtxgYi97u9ux+wBBHedlSIpETiaWKgQxSrqOi+sNnXw==}
+  '@fewangsit/wangsvue@1.5.229-alpha.52':
+    resolution: {integrity: sha512-RJ5tk7Qye31R6vxufkieuNZ3MLGcEDNnIH6YIRB9CIVfnpXyyv3VhDZSbSB3jxhExQHsyAH3xN2oNuZRMGO1wQ==}
     hasBin: true
 
   '@fewangsit/workspace-api-services@1.0.18-alpha.1':
@@ -5223,7 +5223,7 @@ snapshots:
 
   '@fewangsit/wangsvue-presets@2.0.0-alpha.2': {}
 
-  '@fewangsit/wangsvue@1.5.229-alpha.50(@stencil/core@4.39.0)(hono@4.11.7)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))':
+  '@fewangsit/wangsvue@1.5.229-alpha.52(@stencil/core@4.39.0)(hono@4.11.7)(vue-router@4.5.1(vue@3.5.16(typescript@5.8.3)))(vue@3.5.16(typescript@5.8.3))':
     dependencies:
       '@modelcontextprotocol/sdk': 1.25.2(hono@4.11.7)(zod@3.23.8)
       '@toon-format/toon': 2.1.0
